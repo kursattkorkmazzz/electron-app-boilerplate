@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "The electron, typescript, react, webpack boilerplate.",
   "scripts": {
-    "build-watch": "webpack --config ./configs/dev.webpack.config.ts --watch",
-    "build": "webpack --config ./configs/dev.webpack.config.ts",
-    "start": "electron ./dist/dev/electron.bundle.js",
+    "dev": "electron ./dist/dev/electron.bundle.js",
+    "prod": "electron ./dist/prod/electron.bundle.js",
+    "build-dev-watch": "webpack --config ./configs/dev.webpack.config.ts --watch",
+    "build-dev": "webpack --config ./configs/dev.webpack.config.ts",
+    "build-prod-watch": "webpack --config ./configs/prod.webpack.config.ts --watch",
+    "build-prod": "webpack --config ./configs/prod.webpack.config.ts",
     "make": ""
   },
   "author": {
