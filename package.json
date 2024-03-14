@@ -1,7 +1,7 @@
 {
   "name": "electron-app-boilerplate",
   "version": "1.0.0",
-  "description": "The electron, typescript, react, webpack boilerplate.",
+  "description": "The electron, typescript, react, tailwindcss, webpack tech stack boilerplate.",
   "scripts": {
     "dev": "electron ./dist/dev/electron.bundle.js",
     "prod": "electron ./dist/prod/electron.bundle.js",
