@@ -1,0 +1,41 @@
+{
+  "name": "electron-app-boilerplate-example",
+  "version": "1.0.0",
+  "description": "The electron, typescript, react, webpack boilerplate.",
+  "scripts": {
+    "build-main-watch": "webpack --config ./configs/dev.webpack.config.ts --watch",
+    "build-main": "webpack --config ./configs/dev.webpack.config.ts",
+    "build-renderer-watch": "",
+    "build-renderer": "",
+    "build": "npm run build-renderer && npm run build-main",
+    "start": "electron ./dist/dev/electron.bundle.js",
+    "make": ""
+  },
+  "author": {
+    "name": "Kursat Korkmaz",
+    "email": "kursat.korkmaz123@hotmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^29.1.1",
+    "electron-reload": "^2.0.0-alpha.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.2",
+    "webpack": "^5.90.3"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/html-webpack-plugin": "^3.2.9",
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.22",
+    "@types/webpack": "^5.28.5",
+    "electron-reloader": "^1.2.3",
+    "html-webpack-plugin": "^5.6.0",
+    "node-loader": "^2.0.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
