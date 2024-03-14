@@ -6,6 +6,7 @@ const config: webpack.Configuration[] = [
   {
     mode: "development",
     target: "electron-main",
+
     entry: {
       electron: "/src/main/main.ts",
     },
