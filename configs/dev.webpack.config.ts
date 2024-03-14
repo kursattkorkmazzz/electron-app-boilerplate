@@ -15,10 +15,11 @@ const config: webpack.Configuration[] = [
     },
     module: {
       rules: [
-        { test: /\.ts$/, loader: "ts-loader" },
+        { test: /\.ts$/, loader: "ts-loader", exclude: /node_modules/ },
         {
           test: /.node$/,
           loader: "node-loader",
+          exclude: /node_modules/,
         },
       ],
     },
@@ -38,14 +39,16 @@ const config: webpack.Configuration[] = [
     },
     module: {
       rules: [
-        { test: /\.(ts|tsx)$/, loader: "ts-loader" },
+        { test: /\.(ts|tsx)$/, loader: "ts-loader", exclude: /node_modules/ },
         {
-          // TODO Add CSS and Style loaders.
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader", "postcss-loader"],
+          exclude: /node_modules/,
         },
       ],
     },
     resolve: {
-      extensions: [".ts", ".tsx"],
+      extensions: [".ts", ".tsx", ".css"],
     },
     plugins: [
       new HtmlWebpackPlugin({

@@ -1,4 +1,5 @@
 import { app, BrowserWindow } from "electron";
+import path from "path";
 
 let mainWindow: BrowserWindow;
 
@@ -8,7 +9,7 @@ function createWindow() {
     height: 300,
     title: "Title bar",
   });
-  // TODO Load HTML file. => mainWindow.webContents.loadFile("../renderer/index.html");
+  mainWindow.loadFile(path.join(__dirname, "/index.html"));
 }
 
 app.whenReady().then(() => {
