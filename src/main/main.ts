@@ -21,6 +21,9 @@ function createWindow() {
     width: 300,
     height: 300,
     title: "Title bar",
+    webPreferences: {
+      preload: __dirname + "/preload.bundle.js",
+    },
   });
   mainWindow.loadFile(path.join(__dirname, "/index.html"));
 }

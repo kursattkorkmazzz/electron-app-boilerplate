@@ -9,6 +9,7 @@ const config: webpack.Configuration[] = [
 
     entry: {
       electron: "/src/main/main.ts",
+      preload: "/src/main/preload.ts",
     },
     output: {
       filename: "[name].bundle.js",

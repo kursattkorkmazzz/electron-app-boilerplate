@@ -1,5 +1,5 @@
 {
-  "name": "electron-app-boilerplate-example",
+  "name": "electron-app-boilerplate",
   "version": "1.0.0",
   "description": "The electron, typescript, react, webpack boilerplate.",
   "scripts": {
@@ -7,9 +7,7 @@
     "prod": "electron ./dist/prod/electron.bundle.js",
     "build-dev-watch": "webpack --config ./configs/dev.webpack.config.ts --watch",
     "build-dev": "webpack --config ./configs/dev.webpack.config.ts",
-    "build-prod-watch": "webpack --config ./configs/prod.webpack.config.ts --watch",
-    "build-prod": "webpack --config ./configs/prod.webpack.config.ts",
-    "make": ""
+    "make": "npx electron-forge make"
   },
   "author": {
     "name": "Kursat Korkmaz",
