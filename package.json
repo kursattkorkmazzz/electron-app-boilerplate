@@ -24,6 +24,8 @@
     "webpack": "^5.90.3"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^7.3.0",
+    "@electron-forge/maker-zip": "^7.3.0",
     "@types/electron": "^1.6.10",
     "@types/html-webpack-plugin": "^3.2.9",
     "@types/node": "^20.11.25",
